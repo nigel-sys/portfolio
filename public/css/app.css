@@ -107,6 +107,20 @@ body {
 #work__info p .lang {
   text-align: left;
 }
+#work__info a button {
+  background-color: #ffd369;
+  margin: 2rem auto;
+  padding: 0.7rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  border: none;
+}
+#work__info a button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 0.5rem -0.4rem #ffd369;
+  transform: translateY(-0.25rem);
+}
 
 #my__info p {
   padding: 3rem;
@@ -156,17 +170,6 @@ body {
 .my__info p,
 .my__work p {
   padding: 0.25rem 1rem;
-}
-.work__info a button,
-.my__info a button,
-.my__work a button {
-  background-color: #ffd369;
-  margin: 2rem auto;
-  padding: 0.7rem 3rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: lowercase;
-  border: none;
 }
 
 .my__work hr {

@@ -118,6 +118,20 @@ body {
   p .lang {
     text-align: left;
   }
+  a button {
+    background-color: #ffd369;
+    margin: 2rem auto;
+    padding: 0.7rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    border: none;
+  }
+  a button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem #ffd369;
+    transform: translateY(-0.25rem);
+  }
 }
 
 #my__info {
@@ -163,16 +177,6 @@ body {
   }
   p {
     padding: 0.25rem 1rem;
-  }
-
-  a button {
-    background-color: #ffd369;
-    margin: 2rem auto;
-    padding: 0.7rem 3rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: lowercase;
-    border: none;
   }
 }
 
