@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+}
+.header h1 {
+  margin-top: 2rem;
+  font-weight: 100;
+  font-size: 3rem;
+  color: #eeeeee;
+}
+.header h1 span {
+  font-weight: 700;
+}
+.header h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: #ffd369;
+  color: #222222;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.header .profile__pic {
+  width: 19rem;
+  height: 22rem;
+  padding-bottom: 4rem;
+}
+
+.nav {
+  padding-top: 2rem;
+}
+.nav__toggle {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  margin: 0 2rem;
+}
+.nav img {
+  width: 50px;
+  filter: invert(99%) sepia(9%) saturate(58%) hue-rotate(288deg) brightness(115%) contrast(87%);
+}
+.nav .close {
+  display: none;
+}
+.nav__checkbox {
+  display: none;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+.nav__menu li {
+  list-style: none;
+  display: none;
+}
+.nav__menu li:first-child {
+  margin-right: auto;
+  display: block;
+}
+.nav__menu a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 1.2rem;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu {
+  border-bottom: 1px solid #393e46;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+
+#work__info p {
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+#work__info p .lang {
+  text-align: left;
+}
+
+#my__info p {
+  padding: 3rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: #eeeeee;
+}
+#my__info img {
+  margin: 3rem auto 0;
+  width: 20rem;
+  height: 25rem;
+}
+
+.work__info,
+.my__info,
+.my__work {
+  background-color: #222222;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.work__info h2,
+.my__info h2,
+.my__work h2 {
+  color: #ffd369;
+  font-size: 4rem;
+  padding: 3rem 1rem 2rem;
+}
+.work__info hr,
+.my__info hr,
+.my__work hr {
+  width: 8rem;
+  margin: 0 auto;
+}
+.work__info h3,
+.my__info h3,
+.my__work h3 {
+  padding: 3rem 1rem 2rem;
+}
+.work__info h4,
+.my__info h4,
+.my__work h4 {
+  padding: 1.5rem;
+}
+.work__info p,
+.my__info p,
+.my__work p {
+  padding: 0.25rem 1rem;
+}
+.work__info a button,
+.my__info a button,
+.my__work a button {
+  background-color: #ffd369;
+  margin: 2rem auto;
+  padding: 0.7rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  border: none;
+}
+
+.my__work hr {
+  margin-bottom: 5rem;
+}
+.my__work a img {
+  width: 85%;
+  filter: drop-shadow(0 0 0.2rem #eeeeee);
+  margin-top: 0.5rem;
+}
+.my__work a img:hover {
+  border: 2px dashed #ffd369;
+}
+
+footer {
+  background-color: #222222;
+  width: 100%;
+  height: 25%;
+  color: #ffd369;
+  font-size: 1.2rem;
+}
+footer a img {
+  margin: 3rem 1rem;
+  filter: invert(83%) sepia(28%) saturate(898%) hue-rotate(336deg) brightness(103%) contrast(109%);
+}
+
+@media (min-width: 768px) {
+  .header {
+    text-align: left;
+  }
+  .header__content {
+    padding: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .header h1 {
+    margin-top: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  .header h2 {
+    text-align: center;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .header .profile__pic {
+    padding-bottom: 0;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  #work__info {
+    padding: 1rem;
+  }
+  #work__info h3 {
+    font-size: 2rem;
+  }
+  #work__info h4,
+#work__info p {
+    font-size: 1.5rem;
+  }
+
+  #my__info .about__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 0;
+  }
+  #my__info .about__container img {
+    width: 20rem;
+    height: 25rem;
+    margin: 0;
+  }
+  #my__info .about__container p {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 34%;
+    padding-right: 0;
+  }
+
+  #my__work .frontend,
+#my__work .backend {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
