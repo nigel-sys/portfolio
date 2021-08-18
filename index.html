@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/app.css" />
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <img
+      class="upArrow"
+      onclick="scrollToTop()"
+      src="./public/images/up_arrow.png"
+      alt=""
+    />
+    <div class="header">
+      <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <img class="menu" src="./public/images/menu.png" alt="menu" />
+          <img class="close" src="./public/images/close.png" alt="close" />
+        </label>
+        <ul class="nav__menu">
+          <li>
+            <a href=""><img src="./public/images/logo.png" alt="logo" /></a>
+          </li>
+          <li><a href="#my__info">About</a></li>
+          <li><a href="#my__work">My Work</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__content">
+        <div>
+          <h1>
+            Hi, I am <br />
+            <span>Pratyush Baxla</span>
+          </h1>
+          <h2>Full-Stack Dev</h2>
+        </div>
+        <div>
+          <img
+            class="profile__pic"
+            src="./public/images/profile_pic.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="work__info" class="work__info">
+      <h2>What I do</h2>
+      <hr />
+      <h3>Full-Stack Development</h3>
+      <p>
+        I like to integrate beautiful designs into web pages and bring it to
+        life in the browser.
+      </p>
+      <h4>Languages:</h4>
+      <p class="lang">
+        <strong>Front-end: </strong>HTML, CSS, SASS, JavaScript, ReactJs
+      </p>
+      <p class="lang"><strong>Back-end: </strong>NodeJs, ExpressJs, MongoDB</p>
+      <a href="#my__work"><button>See My Work</button></a>
+    </div>
+    <div id="my__info" class="my__info">
+      <h2>About Me</h2>
+      <hr />
+      <div class="about__container">
+        <img src="./public/images/me.jpg" alt="me" />
+        <p>
+          I am an IT Graduate. I fascinate about computers and other
+          technologies. Ive been into tech since 5 years old and always wanted
+          to do work that revolves around computers.
+        </p>
+      </div>
+    </div>
+    <div id="my__work" class="my__work">
+      <h2>My Work</h2>
+      <hr />
+      <h3>Front-End</h3>
+      <div class="frontend">
+        <a href="https://nigel-sys.github.io/sunnyside-agency-landing-page/"
+          ><img src="./public/images/Projects/sunny side.png" alt=""
+        /></a>
+        <a href="https://nigel-sys.github.io/tip-calc-app/"
+          ><img src="./public/images/Projects/tip calc.png" alt=""
+        /></a>
+        <a href="https://arcane-everglades-37029.herokuapp.com/">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./public/images/Projects/keeper_desktop.png"
+            />
+            <img src="./public/images/Projects/keeper.png" alt="" />
+          </picture>
+        </a>
+        <a href="https://nigel-sys.github.io/base-apparel-coming-soon-page/"
+          ><img src="./public/images/Projects/base apparel.png" alt=""
+        /></a>
+      </div>
+      <h3>Back-End</h3>
+      <div class="backend">
+        <a href="https://polar-waters-52563.herokuapp.com/"
+          ><picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./public/images/Projects/secrets_desktop.png"
+            />
+            <img src="./public/images/Projects/secrets.png" alt="" />
+          </picture>
+        </a>
+        <a href="https://peaceful-beyond-97618.herokuapp.com/"
+          ><picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./public/images/Projects/to-do_desktop.png"
+            />
+            <img src="./public/images/Projects/to-do.png" alt="" />
+          </picture>
+        </a>
+        <a href="https://agile-river-82850.herokuapp.com/"
+          ><picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./public/images/Projects/newsletter_desktop.png"
+            />
+            <img src="./public/images/Projects/newsletter.png" alt="" />
+          </picture>
+        </a>
+      </div>
+    </div>
+    <footer id="footer">
+      <h3>pratyushnbaxla79@gmail.com</h3>
+      <a href="mailto:pratyushnbaxla79@gmail.com"
+        ><img src="./public/images/gmail.png" alt=""
+      /></a>
+      <a href="https://github.com/nigel-sys"
+        ><img src="./public/images/github.png" alt=""
+      /></a>
+      <a href="https://twitter.com/nigel1523"
+        ><img src="./public/images/twitter.png" alt=""
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
