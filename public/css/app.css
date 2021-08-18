@@ -12,6 +12,17 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
   height: 100vh;
+  position: relative;
+}
+body .upArrow {
+  display: none;
+  filter: invert(99%) sepia(2%) saturate(268%) hue-rotate(213deg) brightness(114%) contrast(87%);
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+}
+body .upArrow:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -172,16 +183,25 @@ body {
   padding: 0.25rem 1rem;
 }
 
+.my__work h3 {
+  margin: 1rem auto 0;
+}
 .my__work hr {
   margin-bottom: 5rem;
 }
 .my__work a img {
   width: 85%;
   filter: drop-shadow(0 0 0.2rem #eeeeee);
-  margin-top: 0.5rem;
 }
 .my__work a img:hover {
   border: 2px dashed #ffd369;
+}
+.my__work .frontend,
+.my__work .backend {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  gap: 2%;
 }
 
 footer {
@@ -198,14 +218,24 @@ footer a img {
 
 @media (min-width: 768px) {
   .header {
+    height: 100%;
     text-align: left;
   }
   .header__content {
-    padding: 5rem;
+    margin: 12rem 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+  }
+  .header .nav__toggle {
+    display: none;
+  }
+  .header .nav__menu {
+    flex-direction: row;
+  }
+  .header .nav li {
+    display: block;
   }
   .header h1 {
     margin-top: 0;
@@ -255,7 +285,6 @@ footer a img {
 
   #my__work .frontend,
 #my__work .backend {
-    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
